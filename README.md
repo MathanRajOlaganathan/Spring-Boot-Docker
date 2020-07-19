@@ -49,10 +49,13 @@ docker run --name ec-app-docker -p 8282:8080 -v ~/db/migration:/var/migration -e
 ``
 docker exec -t -i ec-app /bin/bash
 ``
-#####
+
 ##### Push image to Docker hub
-######Login to Docker hub locally
+
+#### Login to Docker hub locally
+
 ``docker login``
+
 ###### Upload image
 ``
 docker tag <image id> <docker hub repository>/explorecali-default:latest
