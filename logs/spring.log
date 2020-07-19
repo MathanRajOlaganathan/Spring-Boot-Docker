@@ -1,0 +1,401 @@
+2020-07-16 17:08:54.799  INFO 35440 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Starting ExplorecaliApplication on pOiNtER with PID 35440 (P:\Github\Spring-Boot-Docker\explorecali-mongo\target\classes started by omrfr in P:\Github\Spring-Boot-Docker)
+2020-07-16 17:08:54.799 DEBUG 35440 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-16 17:08:54.799  INFO 35440 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : No active profile set, falling back to default profiles: default
+2020-07-16 17:08:55.317  INFO 35440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 17:08:55.318  INFO 35440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-16 17:08:55.326  INFO 35440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourPackageRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:08:55.329  INFO 35440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourRatingRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:08:55.332  INFO 35440 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:08:55.333  INFO 35440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 JPA repository interfaces.
+2020-07-16 17:08:55.348  INFO 35440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 17:08:55.349  INFO 35440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-07-16 17:08:55.361  INFO 35440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 3 MongoDB repository interfaces.
+2020-07-16 17:08:55.563  INFO 35440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-16 17:08:55.564  INFO 35440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-16 17:08:55.564  INFO 35440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-16 17:08:55.617  INFO 35440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-16 17:08:55.618  INFO 35440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 813 ms
+2020-07-16 17:08:55.655  INFO 35440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2020-07-16 17:08:55.658  INFO 35440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2020-07-16 17:08:55.658  INFO 35440 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:35c7eef7-2579-4b36-9085-5ea6adfe4750'
+2020-07-16 17:08:55.703  INFO 35440 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-16 17:08:55.713  INFO 35440 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-16 17:08:55.725  INFO 35440 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-16 17:08:55.745  INFO 35440 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-16 17:08:55.745  INFO 35440 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-16 17:08:56.313  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2020-07-16 17:08:56.461  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.460+0530 I CONTROL  [initandlisten] MongoDB starting : pid=35176 port=51497 dbpath=C:\Users\omrfr\AppData\Local\Temp\embedmongo-db-a4bbd7c8-c61e-4b7f-b8e4-75fc1c88e407 64-bit host=pOiNtER
+2020-07-16 17:08:56.461  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.462+0530 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2020-07-16 17:08:56.462  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.462+0530 I CONTROL  [initandlisten] db version v3.5.5
+2020-07-16 17:08:56.462  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.462+0530 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2020-07-16 17:08:56.462  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.462+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-07-16 17:08:56.462  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.462+0530 I CONTROL  [initandlisten] modules: none
+2020-07-16 17:08:56.462  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.462+0530 I CONTROL  [initandlisten] build environment:
+2020-07-16 17:08:56.462  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.463+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2020-07-16 17:08:56.463  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.463+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-07-16 17:08:56.463  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.464+0530 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 51497 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\omrfr\AppData\Local\Temp\embedmongo-db-a4bbd7c8-c61e-4b7f-b8e4-75fc1c88e407", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-07-16 17:08:56.465  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:56.466+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7626M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2020-07-16 17:08:57.136  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:57.135+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-07-16 17:08:57.136  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:57.135+0530 I CONTROL  [initandlisten] 
+2020-07-16 17:08:57.136  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:57.136+0530 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2020-07-16 17:08:57.136  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:57.136+0530 I CONTROL  [initandlisten] **       Not recommended for production.
+2020-07-16 17:08:57.137  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:57.136+0530 I CONTROL  [initandlisten] 
+2020-07-16 17:08:57.723  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:57.723+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/omrfr/AppData/Local/Temp/embedmongo-db-a4bbd7c8-c61e-4b7f-b8e4-75fc1c88e407/diagnostic.data'
+2020-07-16 17:08:58.163  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.164+0530 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2020-07-16 17:08:58.163  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.164+0530 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2020-07-16 17:08:58.182  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.182+0530 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2020-07-16 17:08:58.187  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.187+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2020-07-16 17:08:58.188  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.189+0530 I NETWORK  [thread1] waiting for connections on port 51497
+2020-07-16 17:08:58.188  INFO 35440 --- [restartedMain] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@67bdf88c
+2020-07-16 17:08:58.194  INFO 35440 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:51497], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-07-16 17:08:58.240  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.241+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:51500 #1 (1 connection now open)
+2020-07-16 17:08:58.260  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.260+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:51500 conn1: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.0.4" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/11.0.7+8-LTS" }
+2020-07-16 17:08:58.261  INFO 35440 --- [cluster-ClusterId{value='5f103c52f409d57b1151c64e', description='null'}-localhost:51497] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:15, serverValue:1}] to localhost:51497
+2020-07-16 17:08:58.262  INFO 35440 --- [cluster-ClusterId{value='5f103c52f409d57b1151c64e', description='null'}-localhost:51497] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:51497, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=337700}
+2020-07-16 17:08:58.263  INFO 35440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-16 17:08:58.313  WARN 35440 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-07-16 17:08:58.313  WARN 35440 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-16 17:08:58.313  WARN 35440 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-07-16 17:08:58.401  WARN 35440 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-16 17:08:58.547  INFO 35440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-16 17:08:58.548  INFO 35440 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-16 17:08:58.549  INFO 35440 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-16 17:08:58.552  INFO 35440 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Started ExplorecaliApplication in 3.808 seconds (JVM running for 333.497)
+2020-07-16 17:08:58.554  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.555+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:51505 #2 (2 connections now open)
+2020-07-16 17:08:58.555  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.555+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:51505 conn2: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.0.4" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/11.0.7+8-LTS" }
+2020-07-16 17:08:58.555  INFO 35440 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:16, serverValue:2}] to localhost:51497
+2020-07-16 17:08:58.886  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.886+0530 I WRITE    [conn2] update test.tourPackage query: { _id: "BC" } planSummary: IDHACK update: { _id: "BC", name: "Backpack Cal", _class: "com.boot.ec.explorecali.entity.TourPackage" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 324ms
+2020-07-16 17:08:58.887  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:58.886+0530 I COMMAND  [conn2] command test.$cmd command: update { update: "tourPackage", ordered: true, updates: [ { q: { _id: "BC" }, u: { _id: "BC", name: "Backpack Cal", _class: "com.boot.ec.explorecali.entity.TourPackage" }, upsert: true } ] } numYields:0 reslen:105 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 325ms
+2020-07-16 17:08:59.439  INFO 35440 --- [Thread-1796] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:08:59.439+0530 I COMMAND  [conn2] command test.tour command: insert { insert: "tour", ordered: true, documents: [ { _id: ObjectId('5f103c52f409d57b1151c64f'), title: "Big Sur Retreat", tourPackageCode: "BC", tourPackageName: "Backpack Cal", details: { blurb: "Big Sur is big country. The Big Sur Retreat takes you to the most majestic part of the Pacific Coast and show you the secret trails.", description: "The region know as Big Sur is like Yosemite's younger cousin, with all the redwood scaling, rock climbing and, best of all, hiking that the larger par...", bullets: "Accommodations at the historic Big Sur River Inn, Privately guided hikes through any of the 5 surrounding national parks, Picnic lunches prepared by t...", difficulty: "Medium", length: "3 days", price: "750", region: "Central Coast", keywords: "Hiking, National Parks, Big Sur" }, _class: "com.boot.ec.explorecali.entity.Tour" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 503ms
+2020-07-16 17:08:59.516  INFO 35440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-16 17:09:23.169  INFO 35440 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 17:09:23.170  INFO 35440 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-16 17:09:23.175  INFO 35440 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-16 17:09:23.181  INFO 35440 --- [http-nio-8080-exec-2] c.b.e.e.controller.TourRatingController  : Get api/tours
+2020-07-16 17:09:23.214 ERROR 35440 --- [http-nio-8080-exec-2] c.b.e.e.controller.TourRatingController  : Not able to Complete the transaction
+
+java.util.NoSuchElementException: Tour does not exist 1
+	at com.boot.ec.explorecali.controller.TourRatingController.verifyTour(TourRatingController.java:98)
+	at com.boot.ec.explorecali.controller.TourRatingController.getAllTourRatings(TourRatingController.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-07-16 17:09:23.216  WARN 35440 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.util.NoSuchElementException: Tour does not exist 1]
+2020-07-16 17:10:45.673  INFO 36488 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Starting ExplorecaliApplication on pOiNtER with PID 36488 (P:\Github\Spring-Boot-Docker\explorecali-mongo\target\classes started by omrfr in P:\Github\Spring-Boot-Docker)
+2020-07-16 17:10:45.677 DEBUG 36488 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-16 17:10:45.679  INFO 36488 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : No active profile set, falling back to default profiles: default
+2020-07-16 17:10:45.764  INFO 36488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-16 17:10:45.765  INFO 36488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-16 17:10:47.655  INFO 36488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 17:10:47.657  INFO 36488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-16 17:10:47.802  INFO 36488 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourPackageRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:10:47.806  INFO 36488 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourRatingRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:10:47.812  INFO 36488 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:10:47.815  INFO 36488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124ms. Found 0 JPA repository interfaces.
+2020-07-16 17:10:47.941  INFO 36488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 17:10:47.942  INFO 36488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-07-16 17:10:48.023  INFO 36488 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 3 MongoDB repository interfaces.
+2020-07-16 17:10:49.588  INFO 36488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-16 17:10:49.605  INFO 36488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-16 17:10:49.606  INFO 36488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-16 17:10:49.796  INFO 36488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-16 17:10:49.797  INFO 36488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4031 ms
+2020-07-16 17:10:49.931  INFO 36488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-16 17:10:50.121  INFO 36488 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-16 17:10:50.127  INFO 36488 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:20773500-0e9b-42d3-8506-49fe33a7cc32'
+2020-07-16 17:10:50.379  INFO 36488 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-16 17:10:50.440  INFO 36488 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-16 17:10:50.496  INFO 36488 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-16 17:10:50.678  INFO 36488 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-16 17:10:50.854  INFO 36488 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-16 17:10:51.072  INFO 36488 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-16 17:10:51.076  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2020-07-16 17:10:51.080  INFO 36488 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-16 17:10:51.147  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.146+0530 I CONTROL  [initandlisten] MongoDB starting : pid=17268 port=51621 dbpath=C:\Users\omrfr\AppData\Local\Temp\embedmongo-db-95437a18-c84d-4c0e-b7b5-4af9530f14bc 64-bit host=pOiNtER
+2020-07-16 17:10:51.147  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2020-07-16 17:10:51.147  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] db version v3.5.5
+2020-07-16 17:10:51.147  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2020-07-16 17:10:51.148  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-07-16 17:10:51.148  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] modules: none
+2020-07-16 17:10:51.148  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] build environment:
+2020-07-16 17:10:51.148  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2020-07-16 17:10:51.148  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-07-16 17:10:51.149  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.147+0530 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 51621 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\omrfr\AppData\Local\Temp\embedmongo-db-95437a18-c84d-4c0e-b7b5-4af9530f14bc", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-07-16 17:10:51.149  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:51.149+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7626M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2020-07-16 17:10:52.006  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:52.005+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-07-16 17:10:52.007  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:52.005+0530 I CONTROL  [initandlisten] 
+2020-07-16 17:10:52.008  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:52.005+0530 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2020-07-16 17:10:52.009  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:52.005+0530 I CONTROL  [initandlisten] **       Not recommended for production.
+2020-07-16 17:10:52.009  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:52.005+0530 I CONTROL  [initandlisten] 
+2020-07-16 17:10:53.147  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:53.147+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/omrfr/AppData/Local/Temp/embedmongo-db-95437a18-c84d-4c0e-b7b5-4af9530f14bc/diagnostic.data'
+2020-07-16 17:10:53.821  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:53.820+0530 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2020-07-16 17:10:53.822  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:53.820+0530 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2020-07-16 17:10:53.898  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:53.898+0530 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2020-07-16 17:10:53.899  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:53.899+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2020-07-16 17:10:53.900  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:53.900+0530 I NETWORK  [thread1] waiting for connections on port 51621
+2020-07-16 17:10:53.900  INFO 36488 --- [restartedMain] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@566dae6e
+2020-07-16 17:10:53.966  INFO 36488 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:51621], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-07-16 17:10:54.044  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:54.044+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:51629 #1 (1 connection now open)
+2020-07-16 17:10:54.058  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:54.058+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:51629 conn1: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.0.4" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/11.0.7+8-LTS" }
+2020-07-16 17:10:54.074  INFO 36488 --- [cluster-ClusterId{value='5f103cc584da4f7dc885a686', description='null'}-localhost:51621] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:51621
+2020-07-16 17:10:54.078  INFO 36488 --- [cluster-ClusterId{value='5f103cc584da4f7dc885a686', description='null'}-localhost:51621] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:51621, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1874900}
+2020-07-16 17:10:54.508  INFO 36488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-16 17:10:54.747  WARN 36488 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-07-16 17:10:54.747  WARN 36488 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-16 17:10:54.747  WARN 36488 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-07-16 17:10:55.174  WARN 36488 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-16 17:10:56.017  INFO 36488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-16 17:10:56.020  INFO 36488 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-16 17:10:56.020  INFO 36488 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-16 17:10:56.034  INFO 36488 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Started ExplorecaliApplication in 10.982 seconds (JVM running for 13.266)
+2020-07-16 17:10:56.065  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:56.066+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:51636 #2 (2 connections now open)
+2020-07-16 17:10:56.066  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:56.067+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:51636 conn2: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.0.4" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/11.0.7+8-LTS" }
+2020-07-16 17:10:56.067  INFO 36488 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:51621
+2020-07-16 17:10:56.494  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:56.494+0530 I WRITE    [conn2] update test.tourPackage query: { _id: "BC" } planSummary: IDHACK update: { _id: "BC", name: "Backpack Cal", _class: "com.boot.ec.explorecali.entity.TourPackage" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 379ms
+2020-07-16 17:10:56.494  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:56.494+0530 I COMMAND  [conn2] command test.$cmd command: update { update: "tourPackage", ordered: true, updates: [ { q: { _id: "BC" }, u: { _id: "BC", name: "Backpack Cal", _class: "com.boot.ec.explorecali.entity.TourPackage" }, upsert: true } ] } numYields:0 reslen:105 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 380ms
+2020-07-16 17:10:56.893  INFO 36488 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:10:56.893+0530 I COMMAND  [conn2] command test.tour command: insert { insert: "tour", ordered: true, documents: [ { _id: ObjectId('5f103cc884da4f7dc885a687'), title: "Big Sur Retreat", tourPackageCode: "BC", tourPackageName: "Backpack Cal", details: { blurb: "Big Sur is big country. The Big Sur Retreat takes you to the most majestic part of the Pacific Coast and show you the secret trails.", description: "The region know as Big Sur is like Yosemite's younger cousin, with all the redwood scaling, rock climbing and, best of all, hiking that the larger par...", bullets: "Accommodations at the historic Big Sur River Inn, Privately guided hikes through any of the 5 surrounding national parks, Picnic lunches prepared by t...", difficulty: "Medium", length: "3 days", price: "750", region: "Central Coast", keywords: "Hiking, National Parks, Big Sur" }, _class: "com.boot.ec.explorecali.entity.Tour" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 309ms
+2020-07-16 17:11:15.231  INFO 36488 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 17:11:15.232  INFO 36488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-16 17:11:15.255  INFO 36488 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-07-16 17:11:38.369  INFO 36488 --- [http-nio-8080-exec-4] c.b.e.e.controller.TourRatingController  : Get api/tours
+2020-07-16 17:11:38.383 ERROR 36488 --- [http-nio-8080-exec-4] c.b.e.e.controller.TourRatingController  : Not able to Complete the transaction
+
+java.util.NoSuchElementException: Tour does not exist 1
+	at com.boot.ec.explorecali.controller.TourRatingController.verifyTour(TourRatingController.java:98)
+	at com.boot.ec.explorecali.controller.TourRatingController.getAllTourRatings(TourRatingController.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-07-16 17:11:38.385  WARN 36488 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.util.NoSuchElementException: Tour does not exist 1]
+2020-07-16 17:12:04.950  INFO 21116 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Starting ExplorecaliApplication on pOiNtER with PID 21116 (P:\Github\Spring-Boot-Docker\explorecali-mongo\target\classes started by omrfr in P:\Github\Spring-Boot-Docker)
+2020-07-16 17:12:04.955 DEBUG 21116 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
+2020-07-16 17:12:04.956  INFO 21116 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : No active profile set, falling back to default profiles: default
+2020-07-16 17:12:05.051  INFO 21116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-16 17:12:05.051  INFO 21116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-16 17:12:06.792  INFO 21116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 17:12:06.793  INFO 21116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-16 17:12:06.881  INFO 21116 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourPackageRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:12:06.884  INFO 21116 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourRatingRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:12:06.891  INFO 21116 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.boot.ec.explorecali.repository.TourRepository. If you want this repository to be a JPA repository, consider annotating your entities with one of these annotations: javax.persistence.Entity, javax.persistence.MappedSuperclass (preferred), or consider extending one of the following types with your repository: org.springframework.data.jpa.repository.JpaRepository.
+2020-07-16 17:12:06.895  INFO 21116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 0 JPA repository interfaces.
+2020-07-16 17:12:06.958  INFO 21116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 17:12:06.959  INFO 21116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-07-16 17:12:07.016  INFO 21116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 3 MongoDB repository interfaces.
+2020-07-16 17:12:08.496  INFO 21116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-16 17:12:08.513  INFO 21116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-16 17:12:08.514  INFO 21116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-16 17:12:08.756  INFO 21116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-16 17:12:08.756  INFO 21116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3704 ms
+2020-07-16 17:12:08.894  INFO 21116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-16 17:12:09.069  INFO 21116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-16 17:12:09.078  INFO 21116 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0f4ca69f-8a02-4ccc-a77c-aebf1960a3dd'
+2020-07-16 17:12:09.263  INFO 21116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-16 17:12:09.322  INFO 21116 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-16 17:12:09.376  INFO 21116 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-16 17:12:09.538  INFO 21116 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-16 17:12:09.656  INFO 21116 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-16 17:12:09.851  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2020-07-16 17:12:09.869  INFO 21116 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-16 17:12:09.879  INFO 21116 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-16 17:12:09.925  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.925+0530 I CONTROL  [initandlisten] MongoDB starting : pid=10764 port=51721 dbpath=C:\Users\omrfr\AppData\Local\Temp\embedmongo-db-0a7af998-fdba-4a1c-aa0f-e765f78ea55e 64-bit host=pOiNtER
+2020-07-16 17:12:09.925  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.925+0530 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2020-07-16 17:12:09.925  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten] db version v3.5.5
+2020-07-16 17:12:09.926  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2020-07-16 17:12:09.926  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2020-07-16 17:12:09.926  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten] modules: none
+2020-07-16 17:12:09.926  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten] build environment:
+2020-07-16 17:12:09.926  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2020-07-16 17:12:09.927  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2020-07-16 17:12:09.927  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.926+0530 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 51721 }, security: { authorization: "disabled" }, storage: { dbPath: "C:\Users\omrfr\AppData\Local\Temp\embedmongo-db-0a7af998-fdba-4a1c-aa0f-e765f78ea55e", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2020-07-16 17:12:09.927  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:09.927+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7626M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2020-07-16 17:12:10.792  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:10.792+0530 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2020-07-16 17:12:10.792  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:10.792+0530 I CONTROL  [initandlisten] 
+2020-07-16 17:12:10.793  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:10.792+0530 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2020-07-16 17:12:10.793  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:10.792+0530 I CONTROL  [initandlisten] **       Not recommended for production.
+2020-07-16 17:12:10.793  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:10.793+0530 I CONTROL  [initandlisten] 
+2020-07-16 17:12:11.625  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:11.625+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/omrfr/AppData/Local/Temp/embedmongo-db-0a7af998-fdba-4a1c-aa0f-e765f78ea55e/diagnostic.data'
+2020-07-16 17:12:12.144  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.144+0530 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2020-07-16 17:12:12.145  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.145+0530 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2020-07-16 17:12:12.169  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.169+0530 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2020-07-16 17:12:12.177  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.177+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2020-07-16 17:12:12.306  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.307+0530 I NETWORK  [thread1] waiting for connections on port 51721
+2020-07-16 17:12:12.307  INFO 21116 --- [restartedMain] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7b77c3c4
+2020-07-16 17:12:12.467  INFO 21116 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:51721], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2020-07-16 17:12:12.653  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.653+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:51726 #1 (1 connection now open)
+2020-07-16 17:12:12.690  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:12.690+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:51726 conn1: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.0.4" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/11.0.7+8-LTS" }
+2020-07-16 17:12:12.705  INFO 21116 --- [cluster-ClusterId{value='5f103d147c6a007d9970cb02', description='null'}-localhost:51721] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:51721
+2020-07-16 17:12:12.709  INFO 21116 --- [cluster-ClusterId{value='5f103d147c6a007d9970cb02', description='null'}-localhost:51721] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:51721, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1741600}
+2020-07-16 17:12:13.014  INFO 21116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-16 17:12:13.269  WARN 21116 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-07-16 17:12:13.270  WARN 21116 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-07-16 17:12:13.270  WARN 21116 --- [restartedMain] o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-07-16 17:12:13.725  WARN 21116 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-16 17:12:14.550  INFO 21116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-16 17:12:14.552  INFO 21116 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-16 17:12:14.552  INFO 21116 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-16 17:12:14.571  INFO 21116 --- [restartedMain] c.b.e.e.ExplorecaliApplication           : Started ExplorecaliApplication in 10.341 seconds (JVM running for 13.073)
+2020-07-16 17:12:14.602  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:14.602+0530 I NETWORK  [thread1] connection accepted from 127.0.0.1:51731 #2 (2 connections now open)
+2020-07-16 17:12:14.603  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:14.603+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:51731 conn2: { driver: { name: "mongo-java-driver|sync|spring-boot", version: "4.0.4" }, os: { type: "Windows", name: "Windows 10", architecture: "amd64", version: "10.0" }, platform: "Java/Oracle Corporation/11.0.7+8-LTS" }
+2020-07-16 17:12:14.604  INFO 21116 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:51721
+2020-07-16 17:12:14.997  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:14.996+0530 I WRITE    [conn2] update test.tourPackage query: { _id: "BC" } planSummary: IDHACK update: { _id: "BC", name: "Backpack Cal", _class: "com.boot.ec.explorecali.entity.TourPackage" } keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 346ms
+2020-07-16 17:12:14.998  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:14.997+0530 I COMMAND  [conn2] command test.$cmd command: update { update: "tourPackage", ordered: true, updates: [ { q: { _id: "BC" }, u: { _id: "BC", name: "Backpack Cal", _class: "com.boot.ec.explorecali.entity.TourPackage" }, upsert: true } ] } numYields:0 reslen:105 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 346ms
+2020-07-16 17:12:15.518  INFO 21116 --- [Thread-221] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2020-07-16T17:12:15.517+0530 I COMMAND  [conn2] command test.tour command: insert { insert: "tour", ordered: true, documents: [ { _id: ObjectId('5f103d177c6a007d9970cb03'), title: "Big Sur Retreat", tourPackageCode: "BC", tourPackageName: "Backpack Cal", details: { blurb: "Big Sur is big country. The Big Sur Retreat takes you to the most majestic part of the Pacific Coast and show you the secret trails.", description: "The region know as Big Sur is like Yosemite's younger cousin, with all the redwood scaling, rock climbing and, best of all, hiking that the larger par...", bullets: "Accommodations at the historic Big Sur River Inn, Privately guided hikes through any of the 5 surrounding national parks, Picnic lunches prepared by t...", difficulty: "Medium", length: "3 days", price: "750", region: "Central Coast", keywords: "Hiking, National Parks, Big Sur" }, _class: "com.boot.ec.explorecali.entity.Tour" } ] } ninserted:1 keysInserted:1 numYields:0 reslen:44 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_query 406ms
+2020-07-16 17:12:27.112  INFO 21116 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 17:12:27.112  INFO 21116 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-16 17:12:27.149  INFO 21116 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 37 ms
+2020-07-16 17:13:10.970  INFO 21116 --- [http-nio-8080-exec-5] c.b.e.e.controller.TourRatingController  : Get api/tours
+2020-07-16 17:13:10.995 ERROR 21116 --- [http-nio-8080-exec-5] c.b.e.e.controller.TourRatingController  : Not able to Complete the transaction
+
+java.util.NoSuchElementException: Tour does not exist 5f0f3fde255559637e91aeb8
+	at com.boot.ec.explorecali.controller.TourRatingController.verifyTour(TourRatingController.java:98)
+	at com.boot.ec.explorecali.controller.TourRatingController.getAllTourRatings(TourRatingController.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-07-16 17:13:11.002  WARN 21116 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.util.NoSuchElementException: Tour does not exist 5f0f3fde255559637e91aeb8]
+2020-07-16 17:13:53.075  WARN 21116 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.data.rest.webmvc.ResourceNotFoundException: EntityRepresentationModel not found!]
+2020-07-16 17:14:02.533  INFO 21116 --- [http-nio-8080-exec-1] c.b.e.e.controller.TourRatingController  : Get api/tours
